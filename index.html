@@ -14,12 +14,10 @@
     />
     <link
       rel="stylesheet"
-      href="/assets/library/bootstrap-5.3.0/css/bootstrap.min.css"
+      href="assets/library/bootstrap-5.3.0/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="/assets/library/bootstrap-5.3.0/js/bootstrap.bundle.js"
-    />
+    <script src="assets/library/bootstrap-5.3.0/js/bootstrap.bundle.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>HHKungfu</title>
   </head>
@@ -47,14 +45,14 @@
                   <div class="form-group">
                     <div class="input-group">
                       <input
-                        class="form-control border-end-0 border"
+                        class="form-control rounded-5"
                         type="search"
                         value="search"
                         id="example-search-input"
                       />
-                      <span class="input-group-append">
+                      <span>
                         <button
-                          class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5"
+                          class="btn btn-outline-secondary bg-white border-0 ms-n5 rounded-5"
                           type="button"
                         >
                           <i class="fa fa-search"></i>
@@ -70,7 +68,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container g-0">
           <button
             class="navbar-toggler"
@@ -86,9 +84,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Tu Tiên</a
-                >
+                <a class="nav-link" aria-current="page" href="#">Tu Tiên</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Luyện Cấp</a>
@@ -113,10 +109,95 @@
               </li>
             </ul>
           </div>
+          <button class="btn btn-dark btn-login" type="submit">
+            Đăng Nhập
+          </button>
         </div>
       </nav>
     </header>
-    <main></main>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div id="content" class="col-xs-12 col-sm-12 col-md-8">
+            <!--  movie new -->
+            <section id="movie-new" class="d-flex">
+              <!--  movie-item 1 -->
+              <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item">
+                <div class="movie-item">
+                  <figure>
+                    <img
+                      class="img-fluid"
+                      src="assets/image/Tinh-Than-Bien.jpg"
+                      alt="Tinh Thần Biến Phần 5"
+                      title="Tinh Thần Biến Phần 5"
+                    />
+                  </figure>
+
+                  <span class="episode">Tập 14</span>
+                  <div class="post-title-box">
+                    <h3 class="entry-title">Tinh Thần Biến Phần 5</h3>
+                  </div>
+                </div>
+              </article>
+              <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item">
+                <div class="movie-item">
+                  <figure>
+                    <img
+                      class="img-fluid"
+                      src="assets/image/Tinh-Than-Bien.jpg"
+                      alt="Tinh Thần Biến Phần 5"
+                      title="Tinh Thần Biến Phần 5"
+                    />
+                  </figure>
+
+                  <span class="episode">Tập 14</span>
+                  <div class="post-title-box">
+                    <h3 class="entry-title">Tinh Thần Biến Phần 5</h3>
+                  </div>
+                </div>
+              </article>
+              <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item">
+                <div class="movie-item">
+                  <figure>
+                    <img
+                      class="img-fluid"
+                      src="assets/image/Tinh-Than-Bien.jpg"
+                      alt="Tinh Thần Biến Phần 5"
+                      title="Tinh Thần Biến Phần 5"
+                    />
+                  </figure>
+
+                  <span class="episode">Tập 14</span>
+                  <div class="post-title-box">
+                    <h3 class="entry-title">Tinh Thần Biến Phần 5</h3>
+                  </div>
+                </div>
+              </article>
+              <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item">
+                <div class="movie-item">
+                  <figure>
+                    <img
+                      class="img-fluid"
+                      src="assets/image/Tinh-Than-Bien.jpg"
+                      alt="Tinh Thần Biến Phần 5"
+                      title="Tinh Thần Biến Phần 5"
+                    />
+                  </figure>
+
+                  <span class="episode">Tập 14</span>
+                  <div class="post-title-box">
+                    <h3 class="entry-title">Tinh Thần Biến Phần 5</h3>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+
+          <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-4"></aside>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
