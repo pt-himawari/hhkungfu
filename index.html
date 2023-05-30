@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -19,55 +18,45 @@
     <script src="assets/library/bootstrap-5.3.0/js/bootstrap.bundle.js"></script>
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>HHKungfu</title>
+    <title>Kungfu</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="row justify-content-between" id="headwrap">
-          <div class="col-md-3 col-sm-6 slogan">
+          <!-- logo -->
+          <div class="col-md-3 col-sm-6">
             <h1 class="site-title">
               <a class="logo" href="#" rel="home">
                 <img src="assets/image/Logo.jpg" class="img-fluid" alt="" />
               </a>
             </h1>
           </div>
-          <div class="col-md-5 col-sm-6 halim-search-form hidden-xs my-auto">
-            <div class="header-nav">
-              <div class="col-xs-12">
-                <form
-                  id="search-form-pc"
-                  name="halimForm"
-                  role="search"
-                  action="#"
-                  method="GET"
+          <!-- search form -->
+          <div
+            id="form-group"
+            class="col-12 col-md-5 col-sm-6 my-auto d-flex justify-content-end"
+          >
+            <div class="input-group w-md-70 w-sm-100 w-50">
+              <input
+                class="form-control rounded-5"
+                type="search"
+                placeholder="Tìm kiếm"
+                id="example-search-input"
+              />
+              <span>
+                <button
+                  class="btn btn-outline-secondary bg-white border-0 ms-n5 rounded-5"
+                  type="button"
                 >
-                  <div class="form-group">
-                    <div class="input-group">
-                      <input
-                        class="form-control rounded-5"
-                        type="search"
-                        value="search"
-                        id="example-search-input"
-                      />
-                      <span>
-                        <button
-                          class="btn btn-outline-secondary bg-white border-0 ms-n5 rounded-5"
-                          type="button"
-                        >
-                          <i class="fa fa-search"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                </form>
-                <ul class="ui-autocomplete ajax-results hidden"></ul>
-              </div>
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- nav -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container g-0">
           <button
@@ -79,7 +68,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="fa fa-bars text-light"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -119,82 +108,1075 @@
     <main>
       <div class="container">
         <div class="row">
-          <div id="content" class="col-xs-12 col-sm-12 col-md-8">
+          <div id="content" class="col-lg-8">
             <!--  movie new -->
-            <section id="movie-new" class="d-flex">
-              <!--  movie-item 1 -->
-              <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item">
-                <div class="movie-item">
-                  <figure>
-                    <img
-                      class="img-fluid"
-                      src="assets/image/Tinh-Than-Bien.jpg"
-                      alt="Tinh Thần Biến Phần 5"
-                      title="Tinh Thần Biến Phần 5"
-                    />
-                  </figure>
+            <section id="movie-new">
+              <!-- title -->
+              <div class="section-title py-2 my-2">
+                <span class="gradient-color py-2">Mới Nhất</span>
+              </div>
 
-                  <span class="episode">Tập 14</span>
-                  <div class="post-title-box">
-                    <h3 class="entry-title">Tinh Thần Biến Phần 5</h3>
-                  </div>
-                </div>
-              </article>
-              <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item">
-                <div class="movie-item">
-                  <figure>
-                    <img
-                      class="img-fluid"
-                      src="assets/image/Tinh-Than-Bien.jpg"
-                      alt="Tinh Thần Biến Phần 5"
-                      title="Tinh Thần Biến Phần 5"
-                    />
-                  </figure>
+              <!-- movie block -->
+              <div id="movie-block" class="d-flex flex-wrap">
+                <!--  movie-item 1 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
 
-                  <span class="episode">Tập 14</span>
-                  <div class="post-title-box">
-                    <h3 class="entry-title">Tinh Thần Biến Phần 5</h3>
-                  </div>
-                </div>
-              </article>
-              <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item">
-                <div class="movie-item">
-                  <figure>
-                    <img
-                      class="img-fluid"
-                      src="assets/image/Tinh-Than-Bien.jpg"
-                      alt="Tinh Thần Biến Phần 5"
-                      title="Tinh Thần Biến Phần 5"
-                    />
-                  </figure>
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 2 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
 
-                  <span class="episode">Tập 14</span>
-                  <div class="post-title-box">
-                    <h3 class="entry-title">Tinh Thần Biến Phần 5</h3>
-                  </div>
-                </div>
-              </article>
-              <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item">
-                <div class="movie-item">
-                  <figure>
-                    <img
-                      class="img-fluid"
-                      src="assets/image/Tinh-Than-Bien.jpg"
-                      alt="Tinh Thần Biến Phần 5"
-                      title="Tinh Thần Biến Phần 5"
-                    />
-                  </figure>
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 3 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
 
-                  <span class="episode">Tập 14</span>
-                  <div class="post-title-box">
-                    <h3 class="entry-title">Tinh Thần Biến Phần 5</h3>
-                  </div>
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 4 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 5 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 6 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 7 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 8 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 9 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 10 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 11 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 12 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 13 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 14 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 15 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 16 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 17 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 18 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 19 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <!--  movie-item 20 -->
+                <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                  <a href="#">
+                    <div
+                      class="movie-item text-white position-relative rounded overflow-hidden"
+                    >
+                      <figure class="m-0 p-0 overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="assets/image/Tinh-Than-Bien.jpg"
+                          alt="Tinh Thần Biến Phần 5"
+                          title="Tinh Thần Biến Phần 5"
+                        />
+                      </figure>
+
+                      <span class="episode text-white position-absolute"
+                        >Tập 14</span
+                      >
+                      <div
+                        class="post-title-box position-absolute w-100 m-0 bottom-0"
+                      >
+                        <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <span class="rounded-2 p-3 my-4 bg-dark">
+                <a href="#" class="text-white see-more text-decoration-none">
+                  Xem tất cả
+                </a>
+              </span>
+              >
+            </section>
+
+            <!-- lịch chiếu Showtimes -->
+            <section id="movie-Showtimes">
+              <!-- calendar -->
+              <div class="d-flex">
+                <label class="text-white p-3" for="call-monday">Thứ 2</label>
+                <label class="text-white p-3" for="call-tuesday">Thứ 3</label>
+                <label class="text-white p-3" for="call-wednesday">Thứ 4</label>
+                <label class="text-white p-3" for="call-thursday">Thứ 5</label>
+                <label class="text-white p-3" for="call-friday">Thứ 6</label>
+                <label class="text-white p-3" for="call-saturday">Thứ 7</label>
+                <label class="text-white p-3" for="call-sunday">Chủ Nhật</label>
+              </div>
+              <!-- Showtimes monday  -->
+              <input type="radio" hidden id="call-monday" name="check" />
+              <div id="monday" class="">
+                <div id="movie-block" class="d-flex flex-wrap">
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14 t2</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </article>
+              </div>
+              <!-- Showtimes tuesday  -->
+              <input type="radio" hidden id="call-tuesday" name="check" />
+              <div id="tuesday" class="">
+                <div id="movie-block" class="d-flex flex-wrap">
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14 t3</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <!-- Showtimes Wednesday  -->
+              <input type="radio" hidden id="call-wednesday" name="check" />
+              <div id="wednesday" class="">
+                <div id="movie-block" class="d-flex flex-wrap">
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14 t5</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <!-- Showtimes Thursday  -->
+              <input type="radio" hidden id="call-thursday" name="check" />
+              <div id="thursday" class="">
+                <div id="movie-block" class="d-flex flex-wrap">
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <!-- Showtimes friday  -->
+              <input type="radio" hidden id="call-friday" name="check" />
+              <div id="friday" class="">
+                <div id="movie-block" class="d-flex flex-wrap">
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <!-- Showtimes Saturday  -->
+              <input type="radio" hidden id="call-saturday" name="check" />
+              <div id="saturday" class="">
+                <div id="movie-block" class="d-flex flex-wrap">
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <!-- Showtimes Sunday  -->
+              <input type="radio" hidden id="call-sunday" name="check" />
+              <div id="sunday" class="">
+                <div id="movie-block" class="d-flex flex-wrap">
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <!--  movie-item 1 -->
+                  <article class="col-md-3 col-sm-4 col-6 px-1 pb-3">
+                    <a href="#">
+                      <div
+                        class="movie-item text-white position-relative rounded overflow-hidden"
+                      >
+                        <figure class="m-0 p-0 overflow-hidden">
+                          <img
+                            class="img-fluid"
+                            src="assets/image/Tinh-Than-Bien.jpg"
+                            alt="Tinh Thần Biến Phần 5"
+                            title="Tinh Thần Biến Phần 5"
+                          />
+                        </figure>
+
+                        <span class="episode text-white position-absolute"
+                          >Tập 14</span
+                        >
+                        <div
+                          class="post-title-box position-absolute w-100 m-0 bottom-0"
+                        >
+                          <h3 class="entry-title p-2">Tinh Thần Biến Phần 5</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
             </section>
           </div>
 
-          <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-4"></aside>
+          <aside id="sidebar" class="col-lg-4 ps-3">
+            <!-- title -->
+
+            <div class="section-title py-2 my-2">
+              <span class="gradient-color py-2">Xem nhiều</span>
+            </div>
+
+            <div
+              class="tab-content shadow shadow-light overflow-hidden shadow-intensity-lg rounded"
+            >
+              <!-- item 1 -->
+              <div class="item overflow-hidden position-relative border-bottom">
+                <a href="#" title="Đấu La Đại Lục">
+                  <div class="item-link overflow-hidden">
+                    <img
+                      src="assets/image/Dau-Pha-Thuong-Khung-OVA-3-320x449.jpg"
+                      class="post-thumb img-fluid"
+                      alt="Đấu La Đại Lục"
+                      title="Đấu La Đại Lục"
+                    />
+                  </div>
+                  <h3 class="title position-absolute text-white">
+                    Đấu La Đại Lục
+                  </h3>
+                </a>
+              </div>
+              <!-- item 2 -->
+              <div class="item overflow-hidden position-relative border-bottom">
+                <a href="#" title="Đấu La Đại Lục">
+                  <div class="item-link overflow-hidden">
+                    <img
+                      src="assets/image/Dau-Pha-Thuong-Khung-OVA-3-320x449.jpg"
+                      class="post-thumb img-fluid"
+                      alt="Đấu La Đại Lục"
+                      title="Đấu La Đại Lục"
+                    />
+                  </div>
+                  <h3 class="title position-absolute text-white">
+                    Đấu La Đại Lục
+                  </h3>
+                </a>
+              </div>
+              <!-- item 3 -->
+              <div class="item overflow-hidden position-relative border-bottom">
+                <a href="#" title="Đấu La Đại Lục">
+                  <div class="item-link overflow-hidden">
+                    <img
+                      src="assets/image/Dau-Pha-Thuong-Khung-OVA-3-320x449.jpg"
+                      class="post-thumb img-fluid"
+                      alt="Đấu La Đại Lục"
+                      title="Đấu La Đại Lục"
+                    />
+                  </div>
+                  <h3 class="title position-absolute text-white">
+                    Đấu La Đại Lục
+                  </h3>
+                </a>
+              </div>
+              <!-- item 4 -->
+              <div class="item overflow-hidden position-relative border-bottom">
+                <a href="#" title="Đấu La Đại Lục">
+                  <div class="item-link overflow-hidden">
+                    <img
+                      src="assets/image/Dau-Pha-Thuong-Khung-OVA-3-320x449.jpg"
+                      class="post-thumb img-fluid"
+                      alt="Đấu La Đại Lục"
+                      title="Đấu La Đại Lục"
+                    />
+                  </div>
+                  <h3 class="title position-absolute text-white">
+                    Đấu La Đại Lục
+                  </h3>
+                </a>
+              </div>
+              <!-- item 5 -->
+              <div class="item overflow-hidden position-relative border-bottom">
+                <a href="#" title="Đấu La Đại Lục">
+                  <div class="item-link overflow-hidden">
+                    <img
+                      src="assets/image/Dau-Pha-Thuong-Khung-OVA-3-320x449.jpg"
+                      class="post-thumb img-fluid"
+                      alt="Đấu La Đại Lục"
+                      title="Đấu La Đại Lục"
+                    />
+                  </div>
+                  <h3 class="title position-absolute text-white">
+                    Đấu La Đại Lục
+                  </h3>
+                </a>
+              </div>
+              <!-- item 6 -->
+              <div class="item overflow-hidden position-relative">
+                <a href="#" title="Đấu La Đại Lục">
+                  <div class="item-link overflow-hidden">
+                    <img
+                      src="assets/image/Dau-Pha-Thuong-Khung-OVA-3-320x449.jpg"
+                      class="post-thumb img-fluid"
+                      alt="Đấu La Đại Lục"
+                      title="Đấu La Đại Lục"
+                    />
+                  </div>
+                  <h3 class="title position-absolute text-white">
+                    Đấu La Đại Lục
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </main>
