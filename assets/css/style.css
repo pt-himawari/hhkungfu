@@ -52,9 +52,11 @@ main {
 .navbar-nav > li > a:hover {
   color: #fff;
   background: rgba(0, 0, 0, 0.2);
-  animation: flicker 1s ease-in-out infinite alternate;
+  animation: flicker 3s ease-in-out infinite alternate;
 }
-
+.navbar-nav .nav-item:hover {
+  background-color: #272525;
+}
 .g-1 {
   gap: 10px;
 }
@@ -74,6 +76,7 @@ figure:hover img {
 figure:hover ~ .episode {
   background-size: 100% 250%;
   transition: 0.5s;
+  font-size: 15px;
 }
 
 .movie-item .episode {
@@ -128,12 +131,16 @@ figure:hover ~ .episode {
 .item {
   opacity: 0.8;
   background-color: #0b0b0d;
+  border-bottom: 1px solid #646262;
 }
 .item:hover {
   opacity: 1;
   /* background-color: black; */
 }
+article:hover .entry-title,
 .item:hover .title {
+  transition: 0.3s ease-in-out;
+
   background: -webkit-gradient(
     linear,
     left top,
@@ -144,6 +151,8 @@ figure:hover ~ .episode {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 15px;
+  font-weight: bolder;
 }
 h3.title {
   top: 10px;
@@ -151,7 +160,8 @@ h3.title {
   font-size: 13px;
 }
 .gradient-color {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
 
   /* border-bottom: 1px solid white; */
   background: -webkit-gradient(
@@ -166,12 +176,11 @@ h3.title {
   -webkit-text-fill-color: transparent;
 }
 .section-title {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   border-image: linear-gradient(
     0.25turn,
     rgba(255, 249, 34),
-    rgba(255, 0, 128),
-    rgba(56, 2, 155, 0)
+    rgba(255, 0, 128)
   );
   border-image-slice: 1;
   /* width: 100%; */
@@ -207,6 +216,10 @@ h3.title {
 }
 #call-sunday:checked ~ #sunday {
   display: block;
+}
+
+footer {
+  background-color: #0e0e13;
 }
 @media (max-width: 992px) and (min-height: 575px) {
   .w-md-70 {
