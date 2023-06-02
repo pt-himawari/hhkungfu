@@ -218,13 +218,7 @@ h3.title {
 #call-sunday:checked ~ #sunday {
   display: block;
 }
-.primary_ribbon {
-  background: url("assets/image/icon/bookmark-2.webp") no-repeat;
-  width: 42px;
-  height: 47px;
-  background-size: 45px;
-  margin-top: 3px;
-}
+
 .watch-box {
   background: rgba(0, 0, 0, 0.23);
   background: linear-gradient(
@@ -271,15 +265,74 @@ h3.title {
   text-transform: capitalize;
   margin-left: 3px;
 }
-.list-episode ul {
-  /* padding-left: 10px; */
+.gradient-dark-green {
+  background: linear-gradient(
+    140deg,
+    rgba(26, 26, 32, 0.25) 0%,
+    rgba(0, 77, 102, 0.25) 50%,
+    rgba(0, 134, 179, 0.25) 75%,
+    rgba(0, 191, 255, 0.25) 100%
+  );
+}
+.gradient-dark-green:hover {
+  background: linear-gradient(
+    140deg,
+    rgba(0, 77, 102, 0.8) 0%,
+    rgba(0, 134, 179, 0.9) 50%,
+    rgba(0, 191, 255, 1) 100%
+  );
 }
 .list-episode a {
   font-size: 12px;
 }
 .list-episode span {
-  width: 100%;
+  /* width: 100%; */
   padding: 10px 10px;
+}
+.item-content-gradient {
+  /* position: absolute; */
+  height: 50px;
+  /* left: 0; */
+  width: 100%;
+  bottom: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 30, 36, 0.28) 0%,
+    rgb(30, 30, 36) 100%
+  );
+}
+.bg-yellow {
+  background: #a16b29;
+}
+#bookmark {
+  top: 10px;
+  left: 10px;
+}
+.bookmark-img-animation {
+  animation: bookmark-animation 1.5s infinite ease-in-out;
+}
+@keyframes bookmark-animation {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-5deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(5deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-5deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(5deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
 }
 footer {
   background-color: #0e0e13;
