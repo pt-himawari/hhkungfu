@@ -40,27 +40,24 @@
             </h1>
           </div>
           <!-- search form -->
-          <div
+          <form
             id="form-group"
             class="col-12 col-md-5 col-sm-6 my-auto d-flex justify-content-center justify-content-lg-end"
           >
             <div class="input-group">
               <input
-                class="form-control rounded-5"
-                type="search"
+                class="form-control rounded-5 w-25"
+                type="text"
                 placeholder="Tìm kiếm"
                 id="search-input"
               />
-              <span>
-                <button
-                  class="btn btn-outline-secondary bg-white border-0 ms-n5 rounded-5"
-                  type="button"
-                >
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
             </div>
-          </div>
+            <span class="position-relative">
+              <button class="btn border-0 ms-n5 rounded-5 w-25" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </form>
         </div>
       </div>
       <!-- nav -->
@@ -116,7 +113,10 @@
             </ul>
           </div>
           <button class="btn btn-dark btn-login" type="submit">
-            <a href="#" class="text-decoration-none text-white w-100">
+            <a
+              href="login.html"
+              class="text-decoration-none text-white w-100 h-100"
+            >
               Đăng Nhập
             </a>
           </button>

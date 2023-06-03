@@ -41,27 +41,24 @@
             </h1>
           </div>
           <!-- search form -->
-          <div
+          <form
             id="form-group"
             class="col-12 col-md-5 col-sm-6 my-auto d-flex justify-content-center justify-content-lg-end"
           >
             <div class="input-group">
               <input
-                class="form-control rounded-5"
-                type="search"
+                class="form-control rounded-5 w-25"
+                type="text"
                 placeholder="Tìm kiếm"
                 id="search-input"
               />
-              <span>
-                <button
-                  class="btn btn-outline-secondary bg-white border-0 ms-n5 rounded-5"
-                  type="button"
-                >
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
             </div>
-          </div>
+            <span class="position-relative">
+              <button class="btn border-0 ms-n5 rounded-5 w-25" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </form>
         </div>
       </div>
       <!-- nav -->
@@ -117,7 +114,10 @@
             </ul>
           </div>
           <button class="btn btn-dark btn-login" type="submit">
-            <a href="singup.html" class="text-decoration-none text-white w-100">
+            <a
+              href="singup.html"
+              class="text-decoration-none text-white w-100 h-100"
+            >
               Đăng Ký
             </a>
           </button>
@@ -140,42 +140,36 @@
                 <div class="d-none d-md-block col-lg-5 overflow-hidden">
                   <img
                     src="../assets/media/images/login.svg"
-                    class="img-fluid w-100 h-100"
-                    alt=""
-                    srcset=""
+                    class="img-fluid h-100"
                   />
                 </div>
                 <div class="col-11 col-md-7">
                   <div class="p-4 p-lg-5">
-                    <form>
-                      <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example17"
-                          >Email :
-                        </label>
+                    <form class="form-login">
+                      <div class="mb-4">
+                        <label for="email">Email : </label>
                         <input
+                          id="email"
                           type="email"
-                          id="form2Example17"
                           placeholder="Nhập Email"
-                          class="form-control form-control-lg input-bg-gradient"
+                          class="form-control"
                         />
                       </div>
 
-                      <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example27"
-                          >Mật Khẩu</label
-                        >
+                      <div class="mb-4">
+                        <label for="password">Mật Khẩu</label>
                         <input
+                          id="password"
                           type="password"
                           placeholder="Nhập Mật Khẩu"
-                          id="form2Example27"
-                          class="form-control form-control-lg input-bg-gradient"
+                          class="form-control"
                         />
                       </div>
 
                       <div class="pt-1 mb-4 text-center">
                         <button
                           class="btn btn-dark btn-lg border border-1"
-                          type="button"
+                          type="submit"
                         >
                           Đăng Nhập
                         </button>

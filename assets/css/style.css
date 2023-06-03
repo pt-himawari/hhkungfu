@@ -57,6 +57,12 @@ main {
   background-color: #272525;
 }
 
+#form-group span {
+  z-index: 1000;
+}
+.form-login input {
+  /* background: none; */
+}
 /* main */
 .section-title {
   border-bottom: 1px solid transparent;
@@ -409,16 +415,9 @@ figure:hover ~ .episode {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.input-bg-gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(114, 214, 245, 0.2),
-    rgba(200, 193, 221, 0.2) 50%,
-    rgba(255, 148, 179, 0.2)
-  );
-}
-input::placeholder {
+form input::placeholder {
+  /* color: #fff !important; */
   font-style: italic;
-  font-size: 12px;
+  font-size: 15px;
 }
 /*end sing up pages */
