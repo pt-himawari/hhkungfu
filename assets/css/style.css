@@ -350,7 +350,7 @@ figure:hover ~ .episode {
 
 @media (min-width: 993px) {
   .input-group {
-    width: 50% !important;
+    width: 63%;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
