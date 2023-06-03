@@ -277,8 +277,7 @@ figure:hover ~ .episode {
 .list-episode a {
   font-size: 12px;
 }
-.list-episode span:hover,
-span.active {
+.list-episode span:hover {
   background: linear-gradient(
     140deg,
     rgba(27, 27, 27, 0.25) 0%,
